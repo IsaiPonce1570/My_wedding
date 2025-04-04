@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weddeing_ElizabethANDIsai</title>
+</head>
+<body>
+    <audio controls autoplay loop>
+        <source src="./Recursos/Recursos auditivos/Coldplay Amazing Day Instrumental Official.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <header>
+        <section>
+            <nav>
+                <a href=""> Programa </a>
+                <a href=""> Nuestra Historia </a>
+                <a href=""> Regalos </a>
+                <a href=""> Confirmacion </a>
+            </nav>
+        </section>
+    </header>
+    <section>
+        <div><img src="./Recursos/xilitla_arco (1).jpg" alt="Foto de ambos en el arco"></div>
+        <div><img src="./Recursos/xilitla_castillo.jpg" alt="Foto de ambos en el castilo"></div>
+        <div><img src="./Recursos/xilitla_lengua_afuera.jpg" alt="Foto de ambo sacando la lengua"></div>
+    </section>
+    <section>
+        <div id="contador"></div>
+    </section>
+    <script>
+        // Fecha del evento
+        const eventoFecha = new Date("March 15, 2026 15:00:00").getTime();
+
+        // Actualiza el contador cada segundo
+        const intervalo = setInterval(function() {
+            const ahora = new Date().getTime();
+            const distancia = eventoFecha - ahora;
+
+            // Cálculos de tiempo
+            const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+            // Muestra el resultado en el elemento con id="contador"
+            document.getElementById("contador").innerHTML = dias + "Dias " + horas + "horas "
+            + minutos + "Minutos " + segundos + "Segundos ";
+
+            // Si la cuenta regresiva ha terminado
+            if (distancia < 0) {
+                clearInterval(intervalo);
+                document.getElementById("contador").innerHTML = "¡El evento ha comenzado!";
+            }
+        }, 1000);
+    </script>
+    <section>
+        <main>
+            <section>
+                <h1><img src="./Recursos/Iconos/recien-casados.png" alt="Icono recien-casados"> Nuestra Historia </h1>
+                <h2>Es cierto cuando dicen que tú no encuentras al amor, el amor te encuentra a ti...</h2>
+                <p>
+                    Sábado, 7 de enero de 2017
+                    <br>
+                    <br>
+                    Parecía ser un día normal de escoleta: instrumentos listos y ganas de tocar hasta quedar exhaustos. Fue ahí, en el lugar menos esperado, donde nos conocimos, compartiendo una pasión, un sentimiento. 
+                    El destino caprichoso nos tenía preparada una sorpresa: unir nuestros caminos, llevándonos por un viaje inesperado, lleno de aventuras e increíbles momentos, pero también situaciones difíciles. 
+                    Aunque nos alejamos múltiples veces, siempre pudimos reencontrarnos, hasta llegar al día de hoy, donde decidimos decir:
+                    ¡Sí, acepto! Y unirnos en matrimonio, comenzando así un nuevo capítulo en nuestra historia.
+                    <br>
+                    <br>
+                    Gracias por ser parte importante de nuestras vidas y acompáñanos a celebrar este gran momento.
+                </p>
+            </section>
+            <img src="./Recursos/Foto_Isai&Elizabeth_Propuesta.jpg" alt="Foto de propuesta de matrimonio">
+        </main>
+    </section>
+    <section>
+        <main>
+            <section>
+                <h1><img src="./Recursos/Iconos/detalle_evento.png" alt="Icono detalle evento">Destalles Del Evento</h1>
+                <h2>Ceremonia Civil</h2>
+                <p>
+                    Nos complace invitarles a la ceremonia civil de nuestra boda, que se llevará a cabo en un lugar muy especial para nosotros: <a href="https://maps.app.goo.gl/y1JQ9nfeo1DJDr3k9">El Jardín para Eventos Azarel</a>, ubicado en Iztapalapa, Ciudad de México.
+                    La ceremonia civil comenzará a las tres de la tarde.
+                </p>
+                <br>
+                <h2>Recepcio</h2>
+                <p>
+                    Al término de la ceremonia, celebraremos juntos en el mismo lugar con una recepción para conmemorar este momento tan significativo en nuestras vidas.
+                </p>
+                <br>
+                <h2>¡Esperamos que disfruten tanto como nosotros de este hermoso lugar y que nos acompañen a celebrar este día tan especial!</h2>
+            </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.998969820347!2d-99.09924160000001!3d19.325850999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce021da8a58193%3A0x489345e7e866ef19!2sJardin%20De%20Eventos%20Azarel!5e0!3m2!1ses-419!2smx!4v1743722298984!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </main>
+    </section>
+    <section>
+        <main>
+            <section>
+                <h1><img src="./Recursos/Iconos/calendario (1).png" alt="Icono calendario (1)">Programa De La Boda</h1>
+                <p>No nos gustaría que te perdieras ni un minuto de nuestra boda. Te pedimos ser puntual para poder seguir el programa preparado.</p>
+                <br>
+                <p>
+                    Ceremonia – 4 pm
+                    <br>
+                    <br>
+                    <br>
+                    Coctél de Bienvenida – 6 pm
+                    <br>
+                    <br>
+                    <br>
+                    Cena – 7 pm
+                    <br>
+                    <br>
+                    <br>
+                    Brindis – 8 pm
+                    <br>
+                    <br>
+                    <br>
+                    Pastel – 9 pm
+                    <br>
+                    <br>
+                    <br>
+                    Ramo – 9:30 pm
+                    <br>
+                    <br>
+                    <br>
+                    ¡A bailar! – 10 pm</p>
+                </p>
+            </section>
+            <img src="./Recursos/Foto_novios_eli&isai.jpg" alt="Foto de ambos novios">
+        </main>
+    </section>
+    <section>
+        <main>
+            <section>
+                <h1><img src="./Recursos/Iconos/regalo.png" alt="Icono regalo">Regalos</h1>
+                <p>
+                    ¡Tu presencia es nuestro mayor regalo! Pero si deseas darnos un presente, puedes hacerlo desde nuestras mesas de regalo o a través de una transferencia bancaria. 
+                    <br>
+                    ¡Muchas gracias!
+                </p>
+                <p>
+                    Liverpool
+                    <br>
+                    Código: 223940
+                    <br>
+                    <a href="https://www.liverpool.com.mx/tienda/home">Ver Sitio</a>
+                </p>
+            </section>
+        </main>
+    </section>
+    <section>
+        <main>
+            <section>
+                <h1><img src="./Recursos/Iconos/Dresscode.png" alt="Icono Dresscode">Codigo De Vestimenta</h1>
+                <p>
+                    El código de vestimenta de nuestro evento es Black Tie. De preferencia vestido largo para las mujeres y traje negro en los hombres. <a href="https://mx.pinterest.com/myspecialdayco/cocktail-guest-dress-code/?invite_code=f191094ce4a3455391af953ea6c96bc4&sender=1072982817379626141">Da clic aquí</a> puedes ver algunos ejemplos.
+                </p>
+                <br>
+                <h1><img src="./Recursos/Iconos/no_niños.png" alt="Icono no_niños">No Niños</h1>
+                <p>En esta ocasión, no podemos extender nuestra invitación a niños. Agradecemos tu comprensión.</p>
+            </section>
+            <img src="./Recursos/novios_gif.gif" alt="GIF Elizabeth e Isai">
+        </main>
+    </section>
+    <section>
+        <h1>Confirmación</h1>
+        <br>
+        <p>Por favor, te pedimos confirmar tu asistencia antes del 30 de noviembre del 2024.</p>
+        <main>
+            <h1>Formulario De Asistencia</h1>
+            <form action="/submit" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label>Confirmar asistencia:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="asistencia" value="si" required> Sí</label>
+                        <label><input type="radio" name="asistencia" value="no" required> No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="personas">¿Cuántas personas van contigo?</label>
+                    <input type="number" id="personas" name="personas" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentarios">¿Quisieras decirnos algo más?</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form> 
+        </main>
+    </section>
+    <footer>
+        <p>© 2025 Mi Página Web</p>
+        <p><img src="./Recursos/Iconos/github.png" alt="Icono github"><a href="https://github.com/IsaiPonce1570" target="_blank">GitHub</a></p>
+        <p><img src="./Recursos/Iconos/LinkedIn.png" alt="Icono linkedin"> <a href="https://www.linkedin.com/in/isai-ponce-velazquez-8b51b7237/" target="_blank">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
