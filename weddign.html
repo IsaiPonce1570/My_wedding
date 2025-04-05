@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weddeing_ElizabethANDIsai</title>
+    <link rel="stylesheet" href="./estilos/weddingStyls.css">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <audio controls autoplay loop>
-        <source src="./Recursos/Recursos auditivos/Coldplay Amazing Day Instrumental Official.mp3" type="audio/mpeg">
+        <source src="./Recursos/Recursos auditivos/Lindsey Stirling - Lord of the Rings Medley (Official Music Video).mp3" type="audio/mpeg">
         Tu navegador no soporta el elemento de audio.
     </audio>
     <header>
         <section>
             <nav>
-                <a href=""> Programa </a>
-                <a href=""> Nuestra Historia </a>
-                <a href=""> Regalos </a>
-                <a href=""> Confirmacion </a>
+                <a href="#programa"> Programa </a>
+                <a href="#nuestra historia"> Nuestra Historia </a>
+                <a href="#regalos"> Regalos </a>
+                <a href="#confirmacion"> Confirmacion </a>
             </nav>
         </section>
     </header>
-    <section>
+    <section id="gallery">
         <div><img src="./Recursos/xilitla_arco (1).jpg" alt="Foto de ambos en el arco"></div>
         <div><img src="./Recursos/xilitla_castillo.jpg" alt="Foto de ambos en el castilo"></div>
         <div><img src="./Recursos/xilitla_lengua_afuera.jpg" alt="Foto de ambo sacando la lengua"></div>
     </section>
-    <section>
+    <section class="contador_seccion">
         <div id="contador"></div>
     </section>
     <script>
@@ -54,10 +56,10 @@
             }
         }, 1000);
     </script>
-    <section>
+    <section id="nuestra historia" class="nuestra_historia">
         <main>
             <section>
-                <h1><img src="./Recursos/Iconos/recien-casados.png" alt="Icono recien-casados"> Nuestra Historia </h1>
+                <h1> Nuestra Historia </h1>
                 <h2>Es cierto cuando dicen que tú no encuentras al amor, el amor te encuentra a ti...</h2>
                 <p>
                     Sábado, 7 de enero de 2017
@@ -75,15 +77,17 @@
             <img src="./Recursos/Foto_Isai&Elizabeth_Propuesta.jpg" alt="Foto de propuesta de matrimonio">
         </main>
     </section>
-    <section>
+    <section class="detalles_del_evento">
         <main>
+            <h1>Destalles Del Evento</h1>
             <section>
-                <h1><img src="./Recursos/Iconos/detalle_evento.png" alt="Icono detalle evento">Destalles Del Evento</h1>
                 <h2>Ceremonia Civil</h2>
                 <p>
                     Nos complace invitarles a la ceremonia civil de nuestra boda, que se llevará a cabo en un lugar muy especial para nosotros: <a href="https://maps.app.goo.gl/y1JQ9nfeo1DJDr3k9">El Jardín para Eventos Azarel</a>, ubicado en Iztapalapa, Ciudad de México.
                     La ceremonia civil comenzará a las tres de la tarde.
                 </p>
+            </section> 
+            <section>
                 <br>
                 <h2>Recepcio</h2>
                 <p>
@@ -95,10 +99,11 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.998969820347!2d-99.09924160000001!3d19.325850999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce021da8a58193%3A0x489345e7e866ef19!2sJardin%20De%20Eventos%20Azarel!5e0!3m2!1ses-419!2smx!4v1743722298984!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </main>
     </section>
-    <section>
+    <section id="programa" class="programa_de_la_boda">
         <main>
             <section>
-                <h1><img src="./Recursos/Iconos/calendario (1).png" alt="Icono calendario (1)">Programa De La Boda</h1>
+                <h1>Programa De La Boda</h1>
+                <br>
                 <p>No nos gustaría que te perdieras ni un minuto de nuestra boda. Te pedimos ser puntual para poder seguir el programa preparado.</p>
                 <br>
                 <p>
@@ -132,10 +137,10 @@
             <img src="./Recursos/Foto_novios_eli&isai.jpg" alt="Foto de ambos novios">
         </main>
     </section>
-    <section>
+    <section id="regalos" class="detalles_del_evento">
         <main>
             <section>
-                <h1><img src="./Recursos/Iconos/regalo.png" alt="Icono regalo">Regalos</h1>
+                <h1>Regalos</h1>
                 <p>
                     ¡Tu presencia es nuestro mayor regalo! Pero si deseas darnos un presente, puedes hacerlo desde nuestras mesas de regalo o a través de una transferencia bancaria. 
                     <br>
@@ -151,21 +156,21 @@
             </section>
         </main>
     </section>
-    <section>
+    <section class="nuestra_historia">
         <main>
             <section>
-                <h1><img src="./Recursos/Iconos/Dresscode.png" alt="Icono Dresscode">Codigo De Vestimenta</h1>
+                <h1>Codigo De Vestimenta</h1>
                 <p>
                     El código de vestimenta de nuestro evento es Black Tie. De preferencia vestido largo para las mujeres y traje negro en los hombres. <a href="https://mx.pinterest.com/myspecialdayco/cocktail-guest-dress-code/?invite_code=f191094ce4a3455391af953ea6c96bc4&sender=1072982817379626141">Da clic aquí</a> puedes ver algunos ejemplos.
                 </p>
                 <br>
-                <h1><img src="./Recursos/Iconos/no_niños.png" alt="Icono no_niños">No Niños</h1>
+                <h1>No Niños</h1>
                 <p>En esta ocasión, no podemos extender nuestra invitación a niños. Agradecemos tu comprensión.</p>
             </section>
             <img src="./Recursos/novios_gif.gif" alt="GIF Elizabeth e Isai">
         </main>
     </section>
-    <section>
+    <section  id="confirmacion" class="confirmacion">
         <h1>Confirmación</h1>
         <br>
         <p>Por favor, te pedimos confirmar tu asistencia antes del 30 de noviembre del 2024.</p>
