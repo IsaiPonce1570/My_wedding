@@ -1,0 +1,512 @@
+html,
+body{
+    position: relative;
+    height: 100%;
+}
+
+/* FUENTES DE PARA TITULOS, SUBTITULOS Y PARRADOS */
+@font-face {
+    font-family: 'Ringbearer';
+    src: url('./fonts/RingbearerMedium-51mgZ.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hobbiton Brushhand';
+    src: url('./fonts/HobbitonBrushhandhobbitonBrush-WygA.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HalfElven Italic';
+    src: url('./fonts/HalfElvenItalicItalic-4O3l.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+h1 {
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*body*/
+body {
+    background-image: url('../Recursos/fondo_de_pantalla2.0.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* HEADER MENU */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: normal;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #ddd;
+}
+
+/* acomodo en galeria de fotografias*/
+
+#gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#gallery div {
+    flex: 1;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* contador regresivo */
+.contador_seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Ajusta la altura según sea necesario */
+    
+}
+
+#contador {
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-size: 2em;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* NUESTRA HISTORIA CSS*/
+
+.nuestra_historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.nuestra_historia main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nuestra_historia main img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nuestra_historia main section {
+    width: 60%;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.detalles_del_evento {
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detalles_del_evento main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detalles_del_evento h1 {
+    text-align: center;
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.detalles_del_evento h2 {
+    text-align: center;
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.detalles_del_evento p {
+    text-align: center; /* Centrar los párrafos */
+}
+
+.detalles_del_evento .ceremonia, .detalles_del_evento .recepcion {
+    width: 45%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.detalles_del_evento .ceremonia {
+    align-self: flex-end;
+}
+
+.detalles_del_evento .recepcion {
+    align-self: flex-start;
+}
+
+.detalles_del_evento iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* styles.css */
+.programa_de_la_boda {
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.programa_de_la_boda main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row-reverse; /* Invertir el orden de los elementos */
+}
+
+.programa_de_la_boda img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.programa_de_la_boda section {
+    width: 60%;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInFromLeft 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.programa_de_la_boda h1 {
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.programa_de_la_boda p {
+    text-align: center;
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Animación */
+@keyframes slideInFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* FOOTER*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 4px solid #444;
+}
+
+footer p {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+/* FORMUALRIO DE CONFIRMACION */
+.confirmacion {
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmacion h1 {
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.confirmacion p {
+    font-family: 'HalfElven Italic', system-ui;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+.confirmacion main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmacion form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.confirmacion .form-group {
+    margin-bottom: 15px;
+}
+
+.confirmacion label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.confirmacion input, .confirmacion textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.confirmacion .radio-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirmacion button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Ringbearer', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.confirmacion button:hover {
+    background-color: #555;
+}
+
+/* estilos/weddingStyls.css */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Galeria de fotos rotativa */
+.swiper {
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+
+.swiper-slide {
+ 
+    width: 300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align:  center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+    margin-bottom:  40px;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #FFB900;
+}
+
+.icons img{
+
+    width: 120px;
+}
+
+.product-content {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-img {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.product-img img{
+    width: 260px;
+}
