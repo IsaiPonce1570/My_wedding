@@ -1,3 +1,9 @@
+html,
+body{
+    position: relative;
+    height: 100%;
+}
+
 /* FUENTES DE PARA TITULOS, SUBTITULOS Y PARRADOS */
 @font-face {
     font-family: 'Ringbearer';
@@ -9,7 +15,7 @@
 @font-face {
     font-family: 'Hobbiton Brushhand';
     src: url('./fonts/HobbitonBrushhandhobbitonBrush-WygA.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -27,21 +33,25 @@ h1 {
 }
 
 h2 {
-    font-family: 'Hobbiton Brushhand', system-ui;
+    font-family: 'Ringbearer', system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
 p {
-    font-family: 'HalfElven Italic', system-ui;
+    font-family: 'Ringbearer', system-ui;
     font-weight: 400;
     font-style: italic;
 }
 
-/* Ocultar etiqueta de audio */
-audio {
-    display: none;
+/*body*/
+body {
+    background-image: url('../Recursos/fondo_de_pantalla2.0.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 
 /* HEADER MENU */
 header {
@@ -82,7 +92,7 @@ header a:hover {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: #f9f9f9;
+   
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;
@@ -122,7 +132,7 @@ header a:hover {
     justify-content: center;
     align-items: center;
     height: 40vh; /* Ajusta la altura según sea necesario */
-    background-color: #f9f9f9;
+    
 }
 
 #contador {
@@ -155,7 +165,7 @@ header a:hover {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #f9f9f9;
+    
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -191,7 +201,7 @@ header a:hover {
 
 .detalles_del_evento {
     padding: 20px;
-    background-color: #f9f9f9;
+    
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -258,7 +268,7 @@ header a:hover {
 /* styles.css */
 .programa_de_la_boda {
     padding: 20px;
-    background-color: #f9f9f9;
+    
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -293,7 +303,7 @@ header a:hover {
 
 .programa_de_la_boda p {
     text-align: center;
-    font-family: 'HalfElven Italic', system-ui;
+    font-family: 'Ringbearer', system-ui;
     font-weight: 400;
     font-style: italic;
 }
@@ -346,7 +356,7 @@ footer a:hover {
 /* FORMUALRIO DE CONFIRMACION */
 .confirmacion {
     padding: 20px;
-    background-color: #f9f9f9;
+    
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -422,4 +432,81 @@ footer a:hover {
 
 .confirmacion button:hover {
     background-color: #555;
+}
+
+/* estilos/weddingStyls.css */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Galeria de fotos rotativa */
+.swiper {
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+
+.swiper-slide {
+ 
+    width: 300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align:  center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+    margin-bottom:  40px;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #FFB900;
+}
+
+.icons img{
+
+    width: 120px;
+}
+
+.product-content {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-img {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.product-img img{
+    width: 260px;
 }
