@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weddeing_ElizabethANDIsai</title>
-    <link rel="stylesheet" href="./estilos/weddingStyls.css">
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./estilos/weddingStyls.css">
 </head>
 <body>
-    <audio controls autoplay loop>
-        <source src="./Recursos/Recursos auditivos/Lindsey Stirling - Lord of the Rings Medley (Official Music Video).mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
     <header>
         <section>
             <nav>
@@ -23,9 +21,9 @@
         </section>
     </header>
     <section id="gallery">
-        <div><img src="./Recursos/xilitla_arco (1).jpg" alt="Foto de ambos en el arco"></div>
-        <div><img src="./Recursos/xilitla_castillo.jpg" alt="Foto de ambos en el castilo"></div>
-        <div><img src="./Recursos/xilitla_lengua_afuera.jpg" alt="Foto de ambo sacando la lengua"></div>
+        <div><img src="./Recursos/ELI&ISAI-20.jpg" alt="Foto de ambs en el arco"></div>
+        <div><img src="./Recursos/ELI&ISAI-6.jpg" alt="Foto de ambos en el castilo"></div>
+        <div><img src="./Recursos/ELI&ISAI-15.jpg" alt="Foto de ambo sacando la lengua"></div>
     </section>
     <section class="contador_seccion">
         <div id="contador"></div>
@@ -74,7 +72,7 @@
                     Gracias por ser parte importante de nuestras vidas y acompáñanos a celebrar este gran momento.
                 </p>
             </section>
-            <img src="./Recursos/Foto_Isai&Elizabeth_Propuesta.jpg" alt="Foto de propuesta de matrimonio">
+            <img src="./Recursos/ELI&ISAI-62.jpg" alt="Foto de propuesta de matrimonio">
         </main>
     </section>
     <section class="detalles_del_evento">
@@ -134,7 +132,7 @@
                     ¡A bailar! – 10 pm</p>
                 </p>
             </section>
-            <img src="./Recursos/Foto_novios_eli&isai.jpg" alt="Foto de ambos novios">
+            <img src="./Recursos/ELI&ISAI-163.jpg" alt="Foto de ambos novios">
         </main>
     </section>
     <section id="regalos" class="detalles_del_evento">
@@ -167,7 +165,7 @@
                 <h1>No Niños</h1>
                 <p>En esta ocasión, no podemos extender nuestra invitación a niños. Agradecemos tu comprensión.</p>
             </section>
-            <img src="./Recursos/novios_gif.gif" alt="GIF Elizabeth e Isai">
+            <img src="./Recursos/ELI&ISAI-155-ANIMATION.gif" alt="GIF Elizabeth e Isai">
         </main>
     </section>
     <section  id="confirmacion" class="confirmacion">
@@ -176,56 +174,179 @@
         <p>Por favor, te pedimos confirmar tu asistencia antes del 30 de noviembre del 2024.</p>
         <main>
             <h1>Formulario De Asistencia</h1>
-            <form id="asistenciaForm" action="submit.php" method="post">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-                </div>
-                <div class="form-group">
-                    <label>Confirmar asistencia:</label>
-                    <div class="radio-group">
-                        <label><input type="radio" name="asistencia" value="si" required> Sí</label>
-                        <label><input type="radio" name="asistencia" value="no" required> No</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="personas">¿Cuántas personas van contigo?</label>
-                    <input type="number" id="personas" name="personas" min="0" required>
-                </div>
-                <div class="form-group">
-                    <label for="comentarios">¿Quisieras decirnos algo más?</label>
-                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form> 
+
         </main>
     </section>
     
-<script>
-     document.getElementById('asistenciaForm').addEventListener('submit', function(event) {
-     event.preventDefault(); // Evita el envío del formulario por defecto
-    
-    const formData = new FormData(event.target);
-    
-     fetch('submit.php', {
-     method: 'POST',
-     body: formData
-     }).then(response => {
-     if (response.ok) {
-     alert('Datos enviados correctamente');
-     } else {
-     alert('Error al enviar los datos');
-     }
-     }).catch(error => {
-     console.error('Error:', error);
-     });
-     });
-     </script>
-    
+
+    <section>
+        <div class="swiper myswiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="image/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                </div>
+                <div class="product-img">
+                    <img src="Recursos/ELI&ISAI-6.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="image/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                </div>
+                <div class="product-img">
+                    <img src="Recursos/ELI&ISAI-15.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="image/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                </div>
+                <div class="product-img">
+                    <img src="Recursos/ELI&ISAI-16.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="image/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                </div>
+                <div class="product-img">
+                    <img src="Recursos/ELI&ISAI-19.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="image/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                </div>
+                <div class="product-img">
+                    <img src="Recursos/ELI&ISAI-20.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="image/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                </div>
+                <div class="product-img">
+                    <img src="Recursos/ELI&ISAI-26.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="image/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                </div>
+                <div class="product-img">
+                    <img src="Recursos/ELI&ISAI-30.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="image/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                </div>
+                <div class="product-img">
+                    <img src="Recursos/ELI&ISAI-31.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="image/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-img">
+                    <img src="Recursos/ELI&ISAI-32.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper (".myswiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centerSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        coverflowEffect: {
+            depth:500,
+            modifer:1,
+            slidesShadows:true,
+            rotate:0,
+            stretch:0
+        }
+    })
+    </script>
+    </section>
+
     <footer>
         <p>© 2025 Mi Página Web</p>
         <p><img src="./Recursos/Iconos/github.png" alt="Icono github"><a href="https://github.com/IsaiPonce1570" target="_blank">GitHub</a></p>
